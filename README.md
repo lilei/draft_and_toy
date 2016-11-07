@@ -1,1 +1,2 @@
-this is my first readme file
+#draft and toy
+#just for fun
