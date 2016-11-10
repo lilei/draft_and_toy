@@ -20,6 +20,7 @@ console.log('*************************************');
 var s = '{"a": 1,"b": 2}'
 var j = JSON.parse(s)
 console.log(j)
+console.log()
 
 j.c = 03
 j.d = 4.
