@@ -1,0 +1,8 @@
+[ Bonn ] <-> [ Berlin ]         # bidirectional
+[ Berlin ] ==> [ Rostock ]      # double
+[ Hamburg ] ..> [ Altona ]      # dotted
+[ Dresden ] - > [ Bautzen ]     # dashed
+[ Leipzig ] ~~> [ Kirchhain ]   # wave
+[ Hof ] .-> [ Chemnitz ]        # dot-dash
+[ Magdeburg ] <=> [ Ulm ]       # bidrectional, double etc
+[ Magdeburg ] -- [ Ulm ]        # arrow-less edge
