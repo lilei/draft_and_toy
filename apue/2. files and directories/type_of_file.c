@@ -38,6 +38,7 @@ int main(int argc, char const *argv[]) {
       ptr = "unknown mode";
     }
     printf("%s\n",ptr);
+    printf("the size is %ld\n",buf.st_size);
   }
   return 0;
 }
