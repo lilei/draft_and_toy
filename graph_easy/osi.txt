@@ -1,0 +1,15 @@
+[L7]{label:Applition;}                              -- Layer 7 Protocol -->  [R7]{label:Applition;origin:L7;offset:3,0}
+[L6]{label:Presentation;origin:L7;offset:0,2;}      -- Layer 6 Protocol -->  [R6]{label:Presentation;origin:R7;offset:0,2;}
+[L5]{label:Session;origin:L6;offset:0,2;}           -- Layer 5 Protocol -->  [R5]{label:Session;origin:R6;offset:0,2;}
+[L4]{label:Transport;origin:L5;offset:0,2;}         -- Layer 4 Protocol -->  [R4]{label:Transport;origin:R5;offset:0,2;}
+[L3]{label:Network;origin:L4;offset:0,2;}           -- Layer 3 Protocol -->  [R3]{label:Network;origin:R4;offset:0,2;}
+[L2]{label:Data Link;origin:L3;offset:0,2;}         -- Layer 2 Protocol -->  [R2]{label:Data Link;origin:R3;offset:0,2;}
+[L1]{label:Physical;origin:L2;offset:0,2;}          -- Layer 1 Protocol -->  [R1]{label:Physical;origin:R2;offset:0,2;}
+
+[L7] -- Layer 6/7 interface --> [L6]        [R1] -- Layer 6/7 interface --> [R2]
+[L6] -- Layer 5/6 interface --> [L5]        [R2] -- Layer 5/6 interface --> [R3]
+[L5] -- Layer 4/5 interface --> [L4]        [R3] -- Layer 4/5 interface --> [R4]
+[L4] -- Layer 3/4 interface --> [L3]        [R4] -- Layer 3/4 interface --> [R5]
+[L3] -- Layer 2/3 interface --> [L2]        [R5] -- Layer 2/3 interface --> [R6]
+[L2] -- Layer 1/2 interface --> [L1]        [R6] -- Layer 1/2 interface --> [R7]
+[L1] => [R1]
